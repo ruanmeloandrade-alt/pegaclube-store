@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#cfe8ff">
+  <meta name="robots" content="index,follow">
+  <title>PegaFralda | Grupo de Ofertas</title>
+  <meta name="description" content="Ofertas de fraldas direto no WhatsApp.">
+  <style>
+    :root{--bg1:#f8fbff;--bg2:#d9eeff;--blue:#6ea7ff;--purple:#5a1f78;--purple2:#7e329f;--pink:#ff5c98;--text:#3d2350;--muted:#715a80;--card:rgba(255,255,255,.9);--shadow:0 24px 70px rgba(90,31,120,.16)}
+    *{box-sizing:border-box}html,body{min-height:100%}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--text);background:radial-gradient(circle at 12% 16%,rgba(110,167,255,.24),transparent 35%),radial-gradient(circle at 84% 18%,rgba(255,92,152,.14),transparent 32%),linear-gradient(145deg,var(--bg1),var(--bg2));display:grid;place-items:center;overflow:hidden}
+    main{width:min(92vw,560px);padding:22px}.card{background:var(--card);border:1px solid rgba(255,255,255,.8);border-radius:32px;box-shadow:var(--shadow);backdrop-filter:blur(14px);padding:clamp(30px,7vw,54px) clamp(24px,7vw,46px);text-align:center}.brand{width:168px;height:168px;margin:0 auto 24px;border-radius:50%;display:grid;place-items:center;background:#cfe8ff;border:6px solid #fff;box-shadow:0 14px 36px rgba(90,31,120,.13);color:var(--purple);font-weight:950;line-height:.9;font-size:25px;letter-spacing:-.045em}.brand .bird{display:block;font-size:38px;line-height:1;margin-bottom:4px}.brand span{display:block;font-size:12px;letter-spacing:.02em;margin-top:7px;font-weight:800}.eyebrow{display:inline-flex;padding:8px 12px;border-radius:999px;background:rgba(255,92,152,.10);color:var(--purple);font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;margin-bottom:15px}h1{margin:0;font-size:clamp(28px,6vw,42px);line-height:1.05;letter-spacing:-.035em;color:var(--purple)}p{margin:16px auto 0;max-width:390px;font-size:clamp(16px,3.8vw,19px);line-height:1.55;color:var(--muted)}.loader{margin:30px auto 0;width:min(100%,360px)}.track{height:8px;overflow:hidden;border-radius:999px;background:rgba(90,31,120,.10)}.bar{height:100%;width:0;border-radius:inherit;background:linear-gradient(90deg,var(--purple),var(--pink),var(--blue));animation:load 7s linear forwards}.status{margin-top:12px;font-size:13px;color:#806c8b}@keyframes load{to{width:100%}}@media(max-width:520px){main{width:100%;padding:18px}.card{border-radius:26px;padding-top:34px;padding-bottom:36px}.brand{width:142px;height:142px;font-size:22px}}
+  </style>
+</head>
+<body>
+  <main>
+    <section class="card" aria-live="polite">
+      <div class="brand"><div><span class="bird">🍼</span>PEGA FRALDA<span>grupo de ofertas</span></div></div>
+      <div class="eyebrow">Clube Pega</div>
+      <h1>As melhores ofertas de fraldas estão aqui.</h1>
+      <p>Em poucos segundos, você será direcionado para o grupo do <strong>PegaFralda</strong> no WhatsApp.</p>
+      <div class="loader"><div class="track"><div class="bar"></div></div><div class="status" id="status">Preparando seu acesso...</div></div>
+    </section>
+  </main>
+  <script>
+    // Link específico do grupo PegaFralda: preencher assim que recuperado/fornecido.
+    const WHATSAPP_GROUP_URL='';
+    window.setTimeout(()=>{
+      if(WHATSAPP_GROUP_URL){window.location.replace(WHATSAPP_GROUP_URL)}
+      else{document.getElementById('status').textContent='Página pronta. Link do grupo aguardando configuração.'}
+    },7000);
+  </script>
+</body>
+</html>
